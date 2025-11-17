@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         val flashcardquestion = findViewById<TextView>(R.id.flashcard_question)
         val flashcardreponse = findViewById<TextView>(R.id.flashcard_reponse)
 
@@ -20,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             flashcardquestion.visibility= View.INVISIBLE
             flashcardreponse.visibility= View.VISIBLE
         }
+         flashcardreponse.setOnClickListener {
+             flashcardreponse.visibility= View.VISIBLE
+             flashcardquestion.visibility= View.INVISIBLE
+         }
     }
+
 }

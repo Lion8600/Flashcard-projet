@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:visibility="visible">
@@ -12,28 +12,52 @@
         android:id="@+id/flashcard_question"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="Who is the 44th President of the united States?"
-        android:textSize="40sp"
-         android:background="#000000"
-         android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+
         />
-
-
 
     <TextView
-        android:id="@+id/flashcard_reponse"
+        android:id="@+id/flashcard_reponse_bill"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_question"
+        android:layout_marginTop="10dp"
+        android:background="#DDA15E"
+        android:gravity="center"
+        android:text="Bill Clinton"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/flashcard_reponse_bush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_reponse_bill"
+        android:layout_marginTop="10dp"
+        android:background="#DDA15E"
+        android:gravity="center"
+        android:text="George H.W.Bush"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/flashcard_reponse_obama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flashcard_reponse_bush"
+        android:layout_marginTop="10dp"
+        android:background="#DDA15E"
         android:gravity="center"
         android:text="Barack Obama"
-        android:textSize="40sp"
-         android:elevation="8dp"
-        android:background="@drawable/card_background"
-        android:visibility="invisible"
-        android:textColor="#780000"
-        />
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+
 
 </RelativeLayout>
+
